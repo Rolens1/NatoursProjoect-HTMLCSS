@@ -41,9 +41,10 @@
     height: 100vh;
     width: 0;
     opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 0;
-    left: -10rem;
+    left: 0;
     z-index: 1500;
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     // display: none;
@@ -102,6 +103,7 @@
     opacity: 1;
     width: 100%;
     left: 0;
+    visibility: visible;
   }
 
   // Icon
