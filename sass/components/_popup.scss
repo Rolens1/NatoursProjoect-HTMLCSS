@@ -26,6 +26,10 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      // background-color: orangered;
+    }
   }
 
   &__left {
@@ -33,6 +37,10 @@
     height: 100%;
     // float: left;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 30%;
+    }
   }
   &__right {
     width: 66.67%;
@@ -40,12 +48,19 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-land) {
+      width: 70%;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
     height: 100%;
+
+    @include respond(tab-land) {
+      margin-top: 50%;
+    }
   }
   &__text {
     font-size: 1.4rem;
