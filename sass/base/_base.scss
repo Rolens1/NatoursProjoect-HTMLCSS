@@ -31,3 +31,8 @@ html {
     font-size: 80%; //1rem = 12, 12/16 = 75%s
   }
 }
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
